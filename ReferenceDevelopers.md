@@ -1,5 +1,5 @@
-**FAQs for Developers**   
-**What applications power the app?**  
+# **FAQs for Developers**   
+### **What applications power the app?**  
 The app is built using: 
 
 - R  
@@ -8,15 +8,15 @@ The app is built using:
 - dplyr   
 - ggplot2
 
-**What version of R should I use?**   
+### **What version of R should I use?**   
 R version 4.0 or above is recommended.
 
-**What happens if I see “package not found” errors in the console?**   
+### **What happens if I see “package not found” errors in the console?**   
 Install missing packages in the Console: 
 
 ![Packages](Packages.png)
 
-**Why does my app fail on deployment?**   
+### **Why does my app fail on deployment?**   
 Common causes: 
 
 - Missing R packages.   
@@ -27,26 +27,26 @@ Common causes:
 - Incorrect CSV or data formatting.   
 - Large files or memory issues. 
 
-**Are column names case-sensitive?**   
+### **Are column names case-sensitive?**   
 Yes. Capitalization must match exactly. 
 
-**Why do I need to restart the app after editing the CSV?**  
+### **Why do I need to restart the app after editing the CSV?**  
 Shiny reads the data only when the app launches. It does not automatically refresh datasets while running.
 
-**Does the app support APIs or databases?**   
+### **Does the app support APIs or databases?**   
 No. The current architecture of the software can only accommodate local CSV file input. 
 
-**Data & Validation Guide for Developers**   
+# **Data & Validation Guide for Developers**   
 This document will define the CSV structure for the My Favorite Albums dataset.
 
-**Required File Location** 
+#### **Required File Location** 
 
 - CSV file must be stored in the **data** folder  
 - File name can be anything, but must end in `.csv` and follow the pathway:  
    `"data/_____.csv"`  
 - Case-sensitive when deployed to the web
 
-**Dataset Column Requirements and Input Rules (Case-Sensitive)**
+####**Dataset Column Requirements and Input Rules (Case-Sensitive)**
 
 | Column | Data Type  | Are Fields Required? | Field Input Rules  |
 | :---- | :---- | :---- | :---- |
@@ -59,7 +59,7 @@ This document will define the CSV structure for the My Favorite Albums dataset.
 | EP | Mark with all caps “EP” | No | Blank OR “EP”  |
 | Live | Mark as “Live” | No | Blank OR “Live”  |
 
-**Validation Requirements**   
+####**Validation Requirements**   
 Before running the application: 
 
 - Column names match exactly   
@@ -69,36 +69,36 @@ Before running the application:
 - No unintended duplicates   
 - App restarted after changes 
 
-**Glossary for Developers**   
+# **Glossary for Developers**   
 This glossary will define technical terms used in the development and deployment of the My Favorite Albums software.  
-**R**  
+#### **R**  
 An open-source programming language used for data analysis, computing, and visualization. R is the programming language used for the development of My Favorite Albums. 
 
-**RStudio**  
+#### **RStudio**  
 An Integrated Development Environment (IDE) for R. It provides a workspace for developers to write code and run applications. RStudio is used to build, test, and launch the My Favorite Albums app.
 
-**shinyapps.io**  
+#### **shinyapps.io**  
 A cloud hosting platform that allows developers to publish Shiny applications online. This website enables the My Favorite Albums application to be accessed through a public web link without requiring users to install R or RStudio.
 
-**app.R**  
+#### **app.R**  
 The main application file that sources both the UI and operational server docs. This file is required to launch the Shiny application. 
 
-**Case Sensitivity**   
+#### **Case Sensitivity**   
 The requirement that file names, column names, and object names must match capitalization exactly.   
 Example: “albums.csv” is **NOT** the same as “Albums.csv”
 
-**Console**   
+#### **Console**   
 The RStudio pane where commands are executed and error messages appear. 
 
-**CSV (Comma-Separated Values)**  
+#### **CSV (Comma-Separated Values)**  
 A structured text file the application depends on as its sole source of data. 
 
 - Each row \= one album  
 - Each column \= one variable 
 
 
-**Deployment**   
+#### **Deployment**   
 The process of publishing the My Favorite Albums software online so others can access the application via a URL.
 
-**Shiny**   
+#### **Shiny**   
 An R package that allows developers to build interactive web applications directly from R code.

@@ -1,25 +1,24 @@
-**How-To Instructions for Developers**   
+# **How-To Instructions for Developers**   
 These instructions are intended for developers with a beginner's knowledge of R. This document will detail installation, file setup, and launch procedures of the My Favorite Albums website in RStudio and ShinyApps. 
 
-**Prerequisites**  
+## **Prerequisites**  
 Before MyFavoriteAlbums can be installed make sure you have these items: 
 - A computer running Windows, macOS, or Linux   
 - Internet access  
 - Basic familiarity with file navigation   
 - Administrative access to install software 
 
-1. **Installing Required Software & Tools (RStudio & Shiny)**   
+### 1. **Installing Required Software & Tools (RStudio & Shiny)**   
    Step 1: Install R   
 - Download and install the latest version of R from the CRAN Website: [https://cran.r-project.org](https://cran.r-project.org)  
 - Follow the installation instruction for your operating system (Windows, macOS, or Linux)
-
 	  
 	Step 2: Install RStudio
 
 - Download and install RStudio from the Posit Website: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)  
 - Open RStudio after installation to confirm it launches successfully. 
 
-	Step 3: Install Required R Packages  
+  Step 3: Install Required R Packages  
 	Open **RStudio** and run the following commands in the **Console**:   
 `install.packages("shiny")`  
 `install.packages("dplyr")`   
@@ -33,7 +32,7 @@ These commands are required as:
     
   After running each command, RStudio should display a message in the **Console**  indicating that the package was successfully installed. If you see a red error message, verify internet connection and resubmit.   
     
-2.  **Downloading the Favorite Albums Software Files**   
+### 2. **Downloading the Favorite Albums Software Files**   
 - Step 1: Download the My Favorite Albums project folder (usually provided as a ZIP file) from this git repository: [https://github.com/UW-Example-Student/MyFavoriteAlbums](https://github.com/UW-Example-Student/MyFavoriteAlbums)  
 1. In the repository, navigate to the Code button. 
 
@@ -46,7 +45,7 @@ These commands are required as:
 3. Unzip the file   
 - Step 2: Save the file to a known location (**Desktop or Documents**)
 
-3. **Opening My Favorite Albums Software Files in RStudio**
+### 3. **Opening My Favorite Albums Software Files in RStudio**
 
 Step 1\. Open RStudio.  
 Step 2\. Click **Files** and open the My Favorite Albums folder located in your known location (e.g. Desktop, Documents, etc.)  
@@ -66,9 +65,9 @@ Step 5\. Once the website opens in viewer or on your default browser, confirm:
 - No red messages appear in the **Console**.
 
 
-**Developer Tutorial: Deploying My Favorite Albums to the Web**   
+# **Developer Tutorial: Deploying My Favorite Albums to the Web**   
 This tutorial will detail how to host the My Favorite Albums app online using shinyapps.io, so others can access it.   
-**Step 1: Create a shinyapps.io Account** 
+### **Step 1: Create a shinyapps.io Account** 
 
 1. Go to [https://www.shinyapps.io/](https://www.shinyapps.io/)   
 2. Click **Sign Up**  
@@ -79,7 +78,7 @@ This tutorial will detail how to host the My Favorite Albums app online using sh
 7. Click the verification link in the email to activate your account.  
 8. Return to the **Log In** page and enter your email and password to access your dashboard. 
 
-**Step 2: Connect RStudio to Your Account**   
+### **Step 2: Connect RStudio to Your Account**   
 From your [shinyapps.io](http://shinyapps.io) dashboard: 
 
 1. Click **Account → Tokens**   
@@ -96,7 +95,7 @@ From your [shinyapps.io](http://shinyapps.io) dashboard:
 
 6. Run the command once to authenticate it. 
 
-**Step 3: Deploy the App** 
+### **Step 3: Deploy the App** 
 
 1. Make sure the working directory is set to the MyFavoriteAlbums folder.   
 2. Before publishing, click **Run App** to confirm the application launches locally and all features function correctly.  
@@ -122,23 +121,23 @@ RStudio:
 9. Verify that the app loads correctly by testing each tab and respective features (dropdown menus, graphs, etc.).   
    
 
-**Developer Tutorial: Creating a Custom CSV File for the “My Favorite Albums” Software**  
+# **Developer Tutorial: Creating a Custom CSV File for the “My Favorite Albums” Software**  
 This tutorial will walk developers through the process of creating a properly formatted CSV file that integrates with the My Favorite Albums application. It is important to remember that the app depends on structured data. If the CSV format is incorrect, the app may fail to load and filters may not work properly.   
-**Step 1: Understand the Required File Structure**   
+### **Step 1: Understand the Required File Structure**   
 Before creating your file, open the **MyFavoriteAlbums** folder in RStudio or within the git repository and locate the **data** folder.
 
 1. Within the **data** folder, open **album-ranking.csv**    
 2. Review how the CSV file references column names (for example: Year, Ranking, Album Artist, Rating, Vinyl, EP, Live).  
 - Your CSV file must match those column names and formatting exactly, including capitalization and spelling. 
 
-**Step 2: Column Format Structure**   
+### **Step 2: Column Format Structure**   
 Below is the expected structure of the columns and names used by the software. 
 
 | Year | Ranking | Album | Artist | Rating | Vinyl | EP | Live |  |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | **2025** | **1** | **The Life of a Showgirl**  | **Taylor Swift**  | **10** | **v** |  |  |  |
 
-**Step 3: Create the CSV File**   
+### **Step 3: Create the CSV File**   
 Using Excel or Google Sheets:
 
 1. Open a blank spreadsheet.   
@@ -177,11 +176,11 @@ If any required field is missing, the dataset may not load or the application ma
 **Optional Fields**  
 Fields such as **Vinyl, EP, and Live** are optional, but if they are used they must follow the formatting rules listed above.
 
-**Step 4: Replacing the CSV File** 
+### **Step 4: Replacing the CSV File** 
 
 1. Since the CSV file has been renamed, update this line in **app\_ui.r**
 
-	**Change:**  
+**Change:**  
 `album_data <- read.csv("data/album-rankings.csv")`  
 **To:**  
 `album_data <- read.csv("data/albums.csv")`
@@ -192,7 +191,7 @@ This change ensures the application reads the correct dataset. The **data** fold
 Note:   
 Make sure this file path matches the name and location of your CSV file. If the name is incorrect or the file is in the wrong folder, the app will fail to load the data set and display a file connection error.
 
-**Step 5: Edits to MyFavoriteAlbum Files**  
+### **Step 5: Edits to MyFavoriteAlbum Files**  
 Before launching the application, there are some small edits that need to be changed within: 
 
 - **app\_ui.r**   
@@ -224,7 +223,7 @@ Before launching the application, there are some small edits that need to be cha
 - The values in **`seq()`** must match the values in **`expand_limits()`**.  
 - Ensure the years match your earliest and latest dates in CSV dataset.
 
-**Step 6: Restarting & Republishing the App**  
+### **Step 6: Restarting & Republishing the App**  
 After modifying the CSV file, you must stop and restart the app. 
 
 Shiny reads the dataset when the app first launches. If the app remains running, it will continue using the old data stored in memory.   
@@ -245,7 +244,7 @@ Confirm:
 - Graphs render without errors.  
 - No red messages appear in the **Console**.
 
-**To Republish the App**
+## **To Republish the App**
 
 1. After confirming the app runs correctly, click the **Publish** button in the upper-right corner of the RStudio script window.  
 2. Select your publishing destination (for example, **shinyapps.io** or **Posit Connect**).  

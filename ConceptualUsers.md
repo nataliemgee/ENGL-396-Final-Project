@@ -1,8 +1,8 @@
-**Conceptual Overview For General Users**   
-**What Is My Favorite Albums?**  
+# **Conceptual Overview For General Users**
+## **What Is My Favorite Albums?**  
 My Favorite Albums is an easy-to-use interactive program that allows you to explore the music you love. As a user, you will be able browse through seven different tabs that each offer a unique way to view and analyze album data. If you are looking to analyze your favorite music, My Favorite Albums is a useful tool for doing so. 
 
-**How It Works**   
+## **How It Works**   
 My Favorite Albums pulls album information from a database and organizes that information into seven easy-to-navigate tabs. Each tab focuses on a different way to explore and analyze album data. Within each tab you can:
 
 - See the total number of albums and artists in the database  
@@ -15,7 +15,7 @@ My Favorite Albums pulls album information from a database and organizes that in
 
 By switching between tabs, you can explore your music preferences, compare trends across years, and gain a comprehensive understanding of your favorite albums. 
 
-**Key Terms**
+## **Key Terms**
 
 - **Album:** A collection of songs released by an artist or a band.   
 - **Album Rating:** A score from 1 to 10 that represents how highly an album is rated, with 10 being the highest.  
@@ -27,14 +27,14 @@ By switching between tabs, you can explore your music preferences, compare trend
   
 
 
-**Limitations For Users**  
+## **Limitations For Users**  
 Users cannot: 
 
 - Modify or add album data within the application. 
 
 All ratings in this program are fixed and based on a provided dataset. The program is only designed to analyze music albums and does not support other types of media or external datasets. 
 
-**Key Concepts**
+## **Key Concepts**
 
 - **Music Exploration:** Browsing and discovering favorite albums and artists.   
 - **Album Evaluation:** Using ratings to assess and analyze albums.   
@@ -42,7 +42,7 @@ All ratings in this program are fixed and based on a provided dataset. The progr
 - **Trends Over Time:** Seeing how your top-rated albums vary across different years
 
 
-**Key Features:** 
+## **Key Features:** 
 
 - **Home Tab:** See the total number of albums and artists in the database, along with the artist who has the most albums listed.  
 - **Number One Albums Tab:** View your top-ranked albums within a selected time range.  
