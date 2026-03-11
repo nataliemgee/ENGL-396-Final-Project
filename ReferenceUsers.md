@@ -81,3 +81,5 @@ The position of an album compared to others released in the same year.
 A horizontal bar that allows you to select a range of values by dragging markers. Used in   
 Number One Albums tab to choose a range of year. 
 
+![Slider](Slider.png)
+

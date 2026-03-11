@@ -4,7 +4,8 @@ These instructions are intended for end users with little programming experience
 **Tab Navigation and Result Interpretation**  
 Open the **My Favorite Albums** website, using this URL: [https://cholstro.shinyapps.io/shiny \-music/](https://cholstro.shinyapps.io/shiny-music/), in your preferred web browser. You will automatically be directed to the starting page,  
 **Tab 1: Home** which serves as the main landing page of the site.  
-![Task Bar Image](Task Bar.png)
+![Task Bar Image](TaskBar.png)
+
 **Tab 1: Home**   
 	**Purpose:** Starting point.  
 **How To Use:** 

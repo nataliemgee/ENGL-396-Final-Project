@@ -14,6 +14,8 @@ R version 4.0 or above is recommended.
 **What happens if I see “package not found” errors in the console?**   
 Install missing packages in the Console: 
 
+![Packages](Packages.png)
+
 **Why does my app fail on deployment?**   
 Common causes: 
 

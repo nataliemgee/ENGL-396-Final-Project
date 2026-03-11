@@ -3,7 +3,6 @@ These instructions are intended for developers with a beginner's knowledge of R.
 
 **Prerequisites**  
 Before MyFavoriteAlbums can be installed make sure you have these items: 
-
 - A computer running Windows, macOS, or Linux   
 - Internet access  
 - Basic familiarity with file navigation   
@@ -38,17 +37,14 @@ These commands are required as:
 - Step 1: Download the My Favorite Albums project folder (usually provided as a ZIP file) from this git repository: [https://github.com/UW-Example-Student/MyFavoriteAlbums](https://github.com/UW-Example-Student/MyFavoriteAlbums)  
 1. In the repository, navigate to the Code button. 
 
-   
-
- 
-
+![Code Button](Code.png)
 
 2. Click, Download Zip
 
+![Zip](Zip.png)
+
 3. Unzip the file   
 - Step 2: Save the file to a known location (**Desktop or Documents**)
-
-	
 
 3. **Opening My Favorite Albums Software Files in RStudio**
 
@@ -56,6 +52,8 @@ Step 1\. Open RStudio.
 Step 2\. Click **Files** and open the My Favorite Albums folder located in your known location (e.g. Desktop, Documents, etc.)  
 Step 3\. Open the **app.R** file from within the My Favorite Albums folder.  
 Step 4\. Click **Run App** in the top right corner to launch the application.
+
+![Run App](RunApp.png)
 
 - The application should open in the Viewer pane or your default browser. If it does not open, check the **Console** for error messages and confirm that all required packages are installed.
 
@@ -90,7 +88,11 @@ From your [shinyapps.io](http://shinyapps.io) dashboard:
 4. Copy the provided token instructions to clipboard.   
    - Make sure that the **With R** tab is selected
 
+![With R](WithR.png)
+
 5. Paste the provided command into the RStudio **Console**. It will look like this:
+
+![Command](Command.png)
 
 6. Run the command once to authenticate it. 
 
@@ -99,14 +101,15 @@ From your [shinyapps.io](http://shinyapps.io) dashboard:
 1. Make sure the working directory is set to the MyFavoriteAlbums folder.   
 2. Before publishing, click **Run App** to confirm the application launches locally and all features function correctly.  
 3. After confirmation, click the Shiny application icon to publish.  
-     
-     
+![Shiny](Shiny.png)
      
 4. In the **Publish to Server** popup: Select Files to Deploy   
 - Verify that all files in the MyFavoriteAlbums folder are selected to publish.  
 5. Make sure the **Launch Browser** box is checked.  
 6. Ensure that the website is being published to the desired account.   
 7. Optional: Enter a different title for the app’s public URL.
+
+![Publish](Publish.png)
 
 8. Click **Publish.** 
 
