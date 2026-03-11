@@ -21,7 +21,9 @@ The tab includes introductory information and an overview of the total number of
 1. Click the **Number One Albums** tab.   
 2. Use the slider to select a starting year  
 3. Select an ending year. 
+
 ![Slider Image](Slider.png)
+
 4. Once the range is selected, view the automatically updated results.
 
 ### **Tab 3: Top Albums by Year**   
