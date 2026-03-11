@@ -133,8 +133,8 @@ Before creating your file, open the **MyFavoriteAlbums** folder in RStudio or wi
 ### **Step 2: Column Format Structure**   
 Below is the expected structure of the columns and names used by the software. 
 
-| Year | Ranking | Album | Artist | Rating | Vinyl | EP | Live |  |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| Year | Ranking | Album | Artist | Rating | Vinyl | EP | Live |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | 
 | **2025** | **1** | **The Life of a Showgirl**  | **Taylor Swift**  | **10** | **v** |  |  |  |
 
 ### **Step 3: Create the CSV File**   
