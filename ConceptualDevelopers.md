@@ -1,6 +1,6 @@
 # **Conceptual Overview For Developers**   
 ## **About**   
-My Favorite Albums is a web-based data analysis software that allows users to analyze, compare, and explore music albums across multiple years. The platform provides interactive visualizations and filters and gives users the ability to examine trends over time to evaluate individual artists, and assess highly rated albums. 
+My Favorite Albums is a web-based data analysis software that allows users to analyze, compare, and explore music albums across multiple years. The platform allows users to update displayed data and offers interactive visualizations and filters and gives users the ability to examine trends over time to evaluate individual artists, and assess highly rated albums. 
 
 ## **Key Features**  
 My Favorite Albums is a web-based data analysis platform that provides seven tabs with different modes of data interpretation for users.  
@@ -21,6 +21,7 @@ My Favorite Albums is a web-based data analysis platform that provides seven tab
 - **R:** An open-source programming language and environment used mainly for statistical computing, data analysis, and data visualization.   
 - **RStudio:** An integrated development environment (IDE) for R that provides a user-friendly interface and tools for writing, running, and debugging R code.   
 - **Shiny:** Shiny is an R package that allows users to create interactive web applications that connect user inputs to updated outputs.   
+-**shinyapps.io:** shinyapps.io is a cloud-based platform by RStudio that lets users deploy and share interactive R Shiny web applications.
 - **UI (User Interface):** The front-end layout of the program including tabs, inputs, and output placeholders. 
 
 
@@ -33,14 +34,14 @@ My Favorite Albums was developed using R. The following items are needed to set 
 - R packages  
   - shiny: to run the interactive web application   
   - dplyr: for data manipulation   
-  - ggplot: for plotting comparison charts 
+  - ggplot2: for plotting comparison charts 
 
 ### **File Structure:**   
 All files are stored in this Git repository: [https://github.com/UW-Example-Student/MyFavoriteAlbums?tab=readme-ov-file](https://github.com/UW-Example-Student/MyFavoriteAlbums?tab=readme-ov-file)
 
 ### **Data Requirements:** 
 
-- The program requires a CSV database file. The filename and data can be customized, but it must include the following columns:   
+- The program requires a CSV file. The filename and data can be customized, but it must include the following columns:   
 - Columns: Year, Ranking, Album, Artist, Rating, Vinyl, EP, Live  
 - Ensure correct data types for numerical and categorical fields  
 - Use the included CSV file (data/album-rankings.csv) in the repository as a reference for formatting your own data.
