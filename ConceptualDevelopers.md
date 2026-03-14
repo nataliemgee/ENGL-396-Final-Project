@@ -48,7 +48,13 @@ All files are stored in this Git repository: [https://github.com/UW-Example-Stud
 
 ## **Data Flow** 
 
-- Album data is loaded from a CSV file and processed by R functions for each tab. The processed data is then sent to the Shiny UI, where it is displayed as tables, charts, or text based on what the user selects.
+- CSV Data Input: Album data is read from a CSV file using R, with numeric and categorical columns automatically typed.
+- Data Cleaning & Preparation: Using dplyr, data is filtered, sorted, and transformed (e.g., calculating average ratings, excluding EPs/live albums) based on user selections.
+- Connect to the UI: Shiny reacts to what the user selects in the app (like a year or artist) and updates the data for that tab.
+- Show Results: The processed data appears as tables, charts, or text in the app. It updates automatically when the user changes their selection.
+- Interactive Loop: User makes a choice, app updates data, results show instantly.
+
+Album data is loaded from a CSV file and processed by R functions for each tab. The processed data is then sent to the Shiny UI, where it is displayed as tables, charts, or text based on what the user selects.
 
 
 ## **Limitations for Developers:** 
