@@ -54,8 +54,6 @@ All files are stored in this Git repository: [https://github.com/UW-Example-Stud
 - Show Results: The processed data appears as tables, charts, or text in the app. It updates automatically when the user changes their selection.
 - Interactive Loop: User makes a choice, app updates data, results show instantly.
 
-Album data is loaded from a CSV file and processed by R functions for each tab. The processed data is then sent to the Shiny UI, where it is displayed as tables, charts, or text based on what the user selects.
-
 
 ## **Limitations for Developers:** 
 
